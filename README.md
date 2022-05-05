@@ -3,7 +3,7 @@
 ## The Nintendo Gameboy is a handheld console released by Nintendo in 1989
 ### This guide will provide the steps to get set up to develop games for the system on Windows in C
 #
-![image info](./images/gameboy.png)
+![image info](gameboy.png)
 #
 ## 1. Software needed
 #
@@ -29,9 +29,9 @@ This software development kit (SDK) will give you all of the tools and libraries
 * The most up to date version of GDBK can be found here:<br>
 https://github.com/gbdk-2020/gbdk-2020<br><br>
 * Start by downloading the .zip file for windows<br>
-![image info](./images/sdk-download.png)<br><BR>
+![image info](sdk-download.png)<br><BR>
 * Once downloaded, extract to the root of your C:// drive<br><br>
-![image](./images/extract.png)<br><br>
+![image](extract.png)<br><br>
 
 #
 ## 3. First Project
@@ -41,7 +41,7 @@ Let's start off simple by creating a project that displays text on the screen.
 
 ### 3.1 First create a new C file and save it to your project directory.<br>
 Here I've created a file titled "main.c" in my hello-world directory<br>
-![image](./images/main.png)<br><br>
+![image](main.png)<br><br>
 
 In that fille we will include the gdbk library. 
 Add the following to the top of your "main.c"<br>
@@ -57,7 +57,7 @@ void main()
 }
 ```
 ### 3.2 At this point we also need to create a second file called "make.bat" in the same directory<br>
-![image](./images/make.png)<br><br>
+![image](make.png)<br><br>
 
 Add the following two lines of code to your make.bat file<br>
 
@@ -68,14 +68,14 @@ c:\gbdk\bin\lcc -Wa-l -Wl-m -Wl-j -DUSE_SFR_FOR_REG -o main.gb main.o
 
 Once these two files are set up we'll need to open a terminal in the project directory
 
-![image](./images/terminal.png)<br><br>
+![image](terminal.png)<br><br>
 
 In the terminal type the following command and press enter
 ```
 .\make.bat
 ```
 Running this command will create a multitude of files on your directory<br><br>
-![image](./images/files.png)<br><br>
+![image](files.png)<br><br>
 The most important file is "main.gb"<br>
 This is the gameboy file that you will be able to run on either hardware or a gameboy emulator
 
@@ -85,8 +85,8 @@ This is the gameboy file that you will be able to run on either hardware or a ga
 #
 The final step is to load up your rom (main.gb) into an emulator
 
-![image](./images/openrom.png)<br><br>
+![image](openrom.png)<br><br>
 
 And there you have it, your first gameboy game!
 
-![image](./images/hello.png)
+![image](hello.png)
